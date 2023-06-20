@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text">
+        <h2>Ableton Live 11 Downloader</h2>
+    </div>
+    <div class="nontext">
+        <input type="text" id="a">
+        <select id="vers"> 
+            <option value="lite">Lite</option>
+            <option value="intro">Intro</option>
+            <option value="standard">Standard</option>
+            <option value="suite">Suite</option>
+            <option value="beta">Beta</option>
+        </select>
+        <button type="button" onclick="waa()" id="b">GO</button>
+    </div>
+    <div class="links">
+        <a href="https://www.ableton.com/en/release-notes/live-11/">See Beta versions</a>
+        <a href="https://www.ableton.com/en/release-notes/live-11/">See Non-Beta versions</a>
+    </div>
+
+    <script>
+        function waa(){
+        var ver = document.getElementById('vers').value;
+        console.log(ver);
+        var name = document.getElementById('a').value;
+        //var nama = name.split('.').join("");
+        if (ver != "beta") {
+            var url = "https://cdn-downloads.ableton.com/channels/" + name + "/ableton_live_" + ver + "_" + name + "_64.zip";
+            window.location.href = url;
+        }
+        else if (ver == "beta") {
+            var url = "https://cdn-downloads.ableton.com/channels/" + name + "/ableton_live_beta_" + nama + "_64.zip";
+            window.location.href = url;
+        }
+        }
+    </script>
+    <style>
+        html, body {
+            height: 90%;
+        }
+        html {
+            display: table;
+            margin: auto;
+        }
+        body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</body>
+</html>
