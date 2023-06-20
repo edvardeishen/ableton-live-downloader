@@ -6,3 +6,5 @@ Done in one HTML file without using any f*ckin' JS framework
 >Better look
 
 >Support all official supported versions (from 9 to 11)
+
+>Deploy
