@@ -30,7 +30,7 @@
         var ver = document.getElementById('vers').value;
         console.log(ver);
         var name = document.getElementById('a').value;
-        //var nama = name.split('.').join("");
+        var nama = name.split('.').join("");
         if (ver != "beta") {
             var url = "https://cdn-downloads.ableton.com/channels/" + name + "/ableton_live_" + ver + "_" + name + "_64.zip";
             window.location.href = url;
