@@ -1,4 +1,4 @@
-# Ableton Live 11 Downloader
+# Ableton Live Downloader
 ## That's very simple Ableton Live downloader, which just redirects you to right Ableton's CDN downloading link 
 Done in one HTML file without using any f*ckin' JS framework
 
